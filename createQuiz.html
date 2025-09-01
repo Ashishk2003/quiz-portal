@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Create Quiz</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="create-quiz">
+  <header class="site-header">
+    <div class="brand">
+      <svg class="logo" width="40" height="40" viewBox="0 0 24 24" fill="none"><rect x="1" y="1" width="22" height="22" rx="5" fill="url(#g)"/><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6C8CFF"/><stop offset="1" stop-color="#00D4FF"/></linearGradient></defs></svg>
+      <div class="brand-text"><h1>QuizPortal</h1><small>Create Quiz</small></div>
+    </div>
+    <div class="header-actions">
+      <button id="themeToggle" class="btn small">Toggle Theme</button>
+      <a class="btn small" href="teacherDashboard.html">Back</a>
+    </div>
+  </header>
+
+  <main class="main narrow">
+    <form id="quizForm" class="card form">
+      <label>Quiz Title
+        <input id="quizTitle" type="text" placeholder="e.g. Unit Test 1" required />
+      </label>
+      <div id="questionsContainer"></div>
+
+      <div class="row">
+        <button type="button" id="addQuestionBtn" class="btn">+ Add Question</button>
+        <button type="submit" class="btn primary">Save Quiz</button>
+      </div>
+      <p id="quizMsg" class="info"></p>
+    </form>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

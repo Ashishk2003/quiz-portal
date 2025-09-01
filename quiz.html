@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body data-page="quiz">
+  <header class="site-header">
+    <div class="brand"><svg class="logo" width="40" height="40" viewBox="0 0 24 24" fill="none"><rect x="1" y="1" width="22" height="22" rx="5" fill="url(#g)"/><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6C8CFF"/><stop offset="1" stop-color="#00D4FF"/></linearGradient></defs></svg><div class="brand-text"><h1 id="quizTitle">Quiz</h1><small>Attempt</small></div></div>
+    <div class="header-actions">
+      <div id="headerTimer" class="timer small"></div>
+      <button id="themeToggle" class="btn small">Toggle Theme</button>
+      <button id="goBackToDashboard" class="btn small">Back</button>
+    </div>
+  </header>
+
+  <main class="main narrow">
+    <div class="progress-wrap"><div id="progressBar" class="progress-bar"></div></div>
+    <div id="quizContainer" class="card"></div>
+
+    <div class="row" style="margin-top:12px"><button id="nextBtn" class="btn">Next</button></div>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
